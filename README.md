@@ -19,7 +19,11 @@ To protect time-critical communication such as transmission and reciving (surpri
 
 ## Permanent storage (NVS) Integration and Dynamic Discovery
 
-Allows for dynamic discovery and auto connection using NVS to remeber MAC adresses. When the client has no connection it broadcasts its MAC address on 0xFF band, when the pairing button is held down, the dongle scans for a time until it finds a device brodcasting on the 0xFF band, runs some checks and connects (using NVS to sustain connection upon replug).
+Allows for dynamic discovery and auto connection using NVS to remeber MAC adresses. When the client has no connection it broadcasts its MAC address on 0xFF (x6) address, when the pairing button is held down, the dongle scans for a time until it finds a device brodcasting on the 0xFF (x6) address, runs some checks and connects (using NVS to sustain connection upon replug).
+
+## Structure
+
+APP --> Serial --> Dongle --> Haptic System --> Motors 
 
 ## What I learned
 
